@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2E335A;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #3A3F6E;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#city {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E335A;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+#city::placeholder {
+    color: #9a9a9a;
+}
+
+#getWeather {
+    padding: 12px 20px;
+    border: none;
+    background-color: #5E5DF0;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#getWeather:hover {
+    background-color: #4a4ac3;
+}
+
+#weather.hidden {
+    display: none;
+}
+
+#location {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#temperature {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#icon {
+    width: 80px;
+    height: 80px;
+}
+
+#description {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ccc;
+    margin-top: 5px;
+}
